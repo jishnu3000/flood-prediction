@@ -1,1 +1,8 @@
-# Flood Prediction
+# A Deep Learning Approach for Flood Prediction
+
+This repository is code and dataset used for my final year project for my BSc (Hons) Computer Science (Data Science) degree.
+
+## Abstract
+Flood prediction is a critical undertaking today as flooding is a natural disaster that comes with catastrophic consequences such as the loss of human lives and destruction of property. Global climate change is also leading to the rise in occurrences of floods. Flood prediction is a necessary job required to take preventative measures and minimize the damage it does.
+In this project, monthly rainfall data is employed to build an artificial neural network model to predict a flood with the monthly rainfall of a year. A Seasonal Autoregressive Integrated Moving Average (SARIMA) model will also be built using the same dataset for time series forecasting of rainfall. Hyperparameter optimization is done for both the models for best prediction results. The SARIMA model will then be used to acquire future rainfall data, on which the neural network model will be run to test its prediction power.
+From the evaluations of the models, the neural network model received an Accuracy score of 91.67% and a F1-Score of 89% while the SARIMA model attained a Root Mean Squared Error (RMSE) value of 198.378 and Coefficient of Determination (R2) score of 55.01%. The simulated monthly rainfall for 2023 is then collected from the SARIMA model and the neural network predicts using the data that there will be no flood for that year. The results of the neural network suggest that the model has high accuracy and could possibly be used in flood detection system that can forecast the monthly rainfall of a year and feed it to the model to predict a flood in advance. The SARIMA model’s results indicate the model requires further tuning and testing to get better predictions.
